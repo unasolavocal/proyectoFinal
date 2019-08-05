@@ -48,7 +48,7 @@
 
   <div class="mainBody">
 
-    @section('home')
+    @yield('content')
 
   </div>
 
