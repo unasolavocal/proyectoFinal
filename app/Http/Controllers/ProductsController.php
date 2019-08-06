@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Validator;
 class ProductsController extends Controller
 {
   public function listado(){
-  /*$products = Product::paginate(6);
-  $vac = compact("products");*/
-  return view("listaProducto");
+  $products = Product::paginate(6);
+  $vac = compact("products");
+  return view("listaProducto", ['products'=> $products]);
 }
