@@ -2,6 +2,7 @@
 
 @section('content')
 
+<body>
 
 <div class="container">
 
@@ -17,22 +18,22 @@
 <div class="row">
 
   <div class="col-md-6">
-  <form  action="/crearProducto" role="form" method="POST" enctype="multipart/form-data">
-    {{csrf_field(   )}}
+  <form  action="/crearProducto" role="form" method="post" enctype="multipart/form-data">
+    {{csrf_field()}}
 
   <div class="form-group">
     <label for="brand" class="loginFormElement">Marca del producto</label>
-    <input class="form-control" value="{{ old('brand') }}" id="productname">
+    <input class="form-control" name="brand" value="{{ old('brand') }}" id="productname">
   </div>
 
  <div class="form-group">
    <label for="productname" class="loginFormElement">Nombre del Producto</label>
-   <input class="form-control" value="{{ old('product_name') }}" id="productname">
+   <input class="form-control" name="product_name" value="{{ old('product_name') }}" id="productname">
  </div>
 
  <div class="form-group">
    <label for="productprice" class="loginFormElement">Precio del producto</label>
-   <input class="form-control" value="{{ old('price_unit') }}" id="productprice">
+   <input class="form-control" name="price_unit" value="{{ old('price_unit') }}" id="productprice">
  </div>
 
 
@@ -40,7 +41,7 @@
 
 <label class="control-label">Imagen</label>
 
-<input class="filestyle" data-icon="false" type="file">
+<input class="filestyle" data-icon="false" name="image" type="file">
 
 </div>
 
@@ -51,6 +52,7 @@
 
     </div>
 
+  </body>
 
 
 

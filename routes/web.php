@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/listaProducto', 'productsController@listado');
+Route::get('/listaProducto', 'ProductsController@listado');
 
 Route::get('/crearProducto', function(){
   return view('crearProducto');

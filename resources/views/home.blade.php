@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
@@ -56,50 +56,81 @@
                       </div>
 
 
-                      <div class="container-fluid">
-                        <div class="row mt-3">
-                          <div class="col-sm-12 col-md-6">
-                              <div class="card">
-                              <div class="card-body">
-                                <h5 class="card-title">Clinicas veterinarias</h5>
-                                <p class="card-text">Trabajamos con mas de 150 clinicas a lo largo de todo el pais.</p>
-                                <a href="#" class="btn btn-primary">Buscar clinica cercana</a>
-                              </div>
-                            </div>
-                          </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">El alimento que tu amigo necesita</h5>
-                                  <p class="card-text">Respaldados por las mejores marcas, tenemos el alimento que tu amigo necesita.</p>
-                                  <a href="#" class="btn btn-primary">Buscar alimento</a>
-                                </div>
-                              </div>
-                            </div>
-                        </div>    <div class="row mt-3">
-                              <div class="col-sm-12 col-md-6">
-                                  <div class="card">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Te vas de viaje?</h5>
-                                    <p class="card-text">No te preocupes por tu mascota, contamos con mas de 100 anfitriones que pueden encargarse de el.</p>
-                                    <a href="#" class="btn btn-primary">Ver hospedajes</a>
-                                  </div>
-                                </div>
-                              </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="card">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Accesorios para mascotas.</h5>
-                                      <p class="card-text">Mima a tu mascota con nuestra amplia seleccion de juguetes pensados para el. </p>
-                                      <a href="#" class="btn btn-primary">Ver juguetes</a>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container-fluid">
+    <div class="row mt-3">
+  <div class="col-sm-12 col-md-4">
+<div class="card" style="width: 18rem;">
+<img src="{{ asset('img/veterinario.jpg') }}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Veterinarios</h5>
+<p class="card-text">Brindamos una extensa red de clinicas y consultorios veterinarios que me mejor se adapte a cada cliente según su mascota.</p>
+<a href="#" class="btn btn-primary">Ingresa al directorio</a>
 </div>
+</div>
+</div>
+
+<div class="col-sm-12 col-md-4">
+<div class="card" style="width: 18rem;">
+<img src="{{ asset('img/comida.jpg') }}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Alimento de mascotas</h5>
+<p class="card-text">Acá podes comprar el alimento que tu amigo necesita, entrá y adquirí productos de las mejores marcas.</p>
+<a href="#" class="btn btn-primary">Ingresa a compras</a>
+</div>
+</div>
+</div>
+
+<div class="col-sm-12 col-md-4">
+<div class="card" style="width: 18rem;">
+<img src="{{ asset('img/hotel.jpg') }}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Cuidadores de mascotas</h5>
+<p class="card-text">¿Te vas de viaje? No te preocupes por tu mascota, contamos con una extensa red de anfitriones que pueden encargarse de el.</p>
+<a href="#" class="btn btn-primary">Ingresa al directorio</a>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="row mt-3">
+    <div class="col-sm-12 col-md-4">
+      <div class="card" style="width: 18rem;">
+      <img src="{{ asset('img/accesorios.jpg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Accesorios para mascotas</h5>
+      <p class="card-text">Mima a tu mascota con nuestra amplia seleccion de juguetes pensados para el, asi como multiples accesorios que pueden hacer su vida un poco mas feliz.</p>
+      <a href="#" class="btn btn-primary">Ingresa a compras</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <div class="card" style="width: 18rem;">
+        <img src="{{ asset('img/paseador.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Paseadores</h5>
+        <p class="card-text">Contamos con todo un grupo de personas dedicadas a pasear a tu mascota y disfrutar del tiempo que desees de un lindo paseo para tu mascota.</p>
+        <a href="#" class="btn btn-primary">Ingresa al directorio</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <div class="card" style="width: 18rem;">
+        <img src="{{ asset('img/perdido.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Mascotas perdidas</h5>
+        <p class="card-text">En esta sección podras encontrar números de emergencia, correos eléctronicos y otras formas de comunicación para tratar los temas de extravío de mascotas.</p>
+        <a href="#" class="btn btn-primary">Ingresa al directorio</a>
+        </div>
+        </div>
+      </div>
+    </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 @endsection
