@@ -5,19 +5,21 @@
 
   <ul>
     <div class="card-deck">
-      @foreach($products as $product){
+      @foreach($products as $product)
         <li>
           <div class="card">
-            <img src="{{asset('storage/$product->product_image')}}" class="card-img-top" alt="...">
+            <img src="{{asset('$product->image')}}" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">{{LA MARCA}}/h5>
+            <h5 class="card-title">{{$product->brand}}</h5>
             <p class="card-text">{{$product->product_name}}</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </li>
+
     @endforeach
   </ul>
 </div>
+($product)
 @endsection

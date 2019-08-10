@@ -31,7 +31,7 @@ Route::get('/crearProducto', function(){
   return view('crearProducto');
 });
 
-Route::post('/crearProducto', 'crearProductoController@crear');
+Route::post('/crearProducto', 'ProductsController@crear');
 
 
 Auth::routes();
