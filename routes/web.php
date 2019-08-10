@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/service', 'servicesController@listado');
+
+
+Route::get('/crearService', function(){
+  return view('crearService');
+});
+
+Route::post('/crearService', 'servicesController@crear');
+
+
 Route::get('/listaProducto', 'ProductsController@listado');
 
 Route::get('/crearProducto', function(){
