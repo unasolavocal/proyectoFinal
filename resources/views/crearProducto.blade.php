@@ -12,9 +12,8 @@
    		<h1>Mundo Mascotas - Crear nuevo producto</h1>
       	</div>
   	</div>
-
-
-
+<br>
+<br>
 <div class="row">
 
   <div class="col-md-6">
@@ -23,17 +22,26 @@
 
   <div class="form-group">
     <label for="brand" class="loginFormElement">Marca del producto</label>
-    <input class="form-control" name="brand" value="{{ old('brand') }}" id="productname">
+    <input class="form-control" name="brand" value="{{ old('brand') }}" id="productbrand">
+    <p class="error_noti"> @if ($errors->has('brand'))
+{{ $errors->first('brand') }}
+ @endif </p>
   </div>
 
  <div class="form-group">
    <label for="productname" class="loginFormElement">Nombre del Producto</label>
    <input class="form-control" name="product_name" value="{{ old('product_name') }}" id="productname">
+   <p class="error_noti"> @if ($errors->has('product_name'))
+{{ $errors->first('product_name') }}
+@endif </p>
  </div>
 
  <div class="form-group">
-   <label for="productprice" class="loginFormElement">Precio del producto</label>
+   <label for="productprice" class="loginFormElement"><strong>Precio del producto</strong></label>
    <input class="form-control" name="price_unit" value="{{ old('price_unit') }}" id="productprice">
+  <p class="error_noti"> @if ($errors->has('price_unit'))
+{{ $errors->first('price_unit') }}
+@endif </p>
  </div>
 
 
@@ -41,16 +49,22 @@
 
 <label class="control-label">Imagen</label>
 
-<input class="filestyle" data-icon="false" name="image" type="file">
-
+<input class="filestyle" data-icon="false" name="image" type="file" id="productimage">
+<p class="error_noti"> @if ($errors->has('image'))
+{{ $errors->first('image') }}
+@endif </p>
 </div>
 
 
     <button type="submit" id="loginSubmit" class="btn btn-success loginFormElement">Añadir producto</button>
 
-    </div></form>
-
     </div>
+
+
+  </form>
+
+
+  </div>
 
   </body>
 

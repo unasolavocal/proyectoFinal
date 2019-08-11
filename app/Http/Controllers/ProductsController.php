@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Validator;
 class ProductsController extends Controller
 {
   public function listado(){
-  $products = Product::paginate(6);
+  $products = Product::paginate(20);
   $vac = compact("products");
   return view("listaProducto", ['products'=> $products]);
 }
@@ -21,9 +21,9 @@ class ProductsController extends Controller
 
       $this->validate($req, [
       'brand' => ['required', 'string', 'max:255'],
-      'product_name' => ['required', 'string', 'max:255'],
+      'product_name' => ['required', 'string','alpha_dash', 'max:255'],
       'price_unit' => ['required','between:0,99.99'],
-      'image' => ['required','mimes:jpeg,png,jpg,gif,svg|max:2048'],
+      'image' => ['required','mimes:jpeg,png,jpg,gif,svg','max:2048'],
     ]);
 
     $productoNuevo = new Product();
@@ -34,7 +34,9 @@ class ProductsController extends Controller
 
     $productoNuevo->save();
 
-    return redirect('/crearProducto');
+    return back()->with('status','Datos cargados correctamente');
+
+  //  return redirect('/crearProducto');
 
   }
 
