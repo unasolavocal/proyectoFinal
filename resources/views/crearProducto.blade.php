@@ -82,7 +82,7 @@
 <footer>
   <hr>
     <div class=" container text-right align-bottom">
-    <p>Shopping Cart | © Copyright 2016, All Rights Reserved</p>
+    <p>Shopping Cart | © Copyright 2019, All Rights Reserved</p>
     </div>
 </footer>
 </div>
